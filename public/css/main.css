@@ -1,0 +1,146 @@
+body
+{
+    background-color: black !important;
+    color: white !important;
+}
+img
+{
+    cursor: pointer;
+}
+.main-image
+{
+    position: absolute;
+    top: 250px;
+    left: 35%;
+    border-radius: 100%;
+    width: 30% !important;
+}
+.react-responsive-modal-modal
+{
+    max-width: 100% !important;
+    width: 85% !important;
+    height: 600px !important;
+    background: black !important;
+    overflow: hidden;
+}
+.react-responsive-modal-container
+{
+    background-color: black;
+}
+.react-responsive-modal-closeButton
+{
+    background-color: black !important;
+    color: white !important;
+}
+.react-responsive-modal-closeButton:focus
+{
+    outline: white !important;
+}
+.image-preview img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 25px;
+}
+.text-preview
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 25px;
+}
+.inner-img-preview img
+{
+    position: relative;
+    left: -25px;
+    width: 100%;
+    padding: 25px;
+}
+
+@keyframes customEnterOverlayAnimation {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes customLeaveOverlayAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes customEnterModalAnimation {
+    0% {
+      transform: scale(0.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes customLeaveModalAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.2);
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    
+    .main-image
+    {
+        left: 0;
+        width: 100% !important;
+        padding: 25px;
+    }
+    .react-responsive-modal-modal
+    {
+        max-width: 100% !important;
+        width: 85% !important;
+        height: 125vh !important;
+        background: black !important;
+        overflow: hidden;
+    }
+    .text-preview
+    {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        padding: 25px;
+    }
+    .text-preview h1
+    {
+        font-size: 16px ;
+    }
+    .text-preview h3
+    {
+        font-size: 13px ;
+    }
+    .text-preview h5
+    {
+        font-size: 11px ;
+    }
+    .image-preview img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        padding: 0px;
+    }
+    .inner-img-preview img
+    {
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+    }
+}
